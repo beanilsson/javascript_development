@@ -72,3 +72,5 @@ echo All set up!
 echo Commands used, and more, can be found here:
 echo https://linuxacademy.com/howtoguides/posts/show/topic/11960-how-to-install-mean-on-ubuntu-1604
 echo ===================================================================
+
+echo Install nodemon/forever!!
