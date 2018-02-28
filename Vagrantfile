@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = 'ubuntu/xenial64'
   config.vm.hostname = 'devbox'
+  ENV['LC_ALL']="en_US.UTF-8"
 
   config.vm.network :private_network, ip: '192.168.50.50'
   config.vm.synced_folder '.', '/vagrant', nfs: true
