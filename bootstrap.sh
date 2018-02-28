@@ -78,3 +78,6 @@ echo https://linuxacademy.com/howtoguides/posts/show/topic/11960-how-to-install-
 echo ===================================================================
 
 echo Install nodemon/forever!!
+
+sudo echo LC_ALL=en_US.UTF-8 >> /etc/environment
+sudo echo LANG=en_US.UTF-8 >> /etc/environment
