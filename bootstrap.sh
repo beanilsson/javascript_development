@@ -50,6 +50,9 @@ echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" 
 sudo apt-get update
 sudo dpkg --configure -a
 sudo apt-get install -y mongodb-org
+sudo mkdir -p /data/db
+sudo chown -R `id -u` /data/db
+sudo chmod -R go+w /data/db
 
 echo ===================================================================
 echo Installing NodeJS
