@@ -75,12 +75,31 @@ echo ===================================================================
 sudo npm install -g mean-cli
 
 echo ===================================================================
+echo TODO: Install nodemon/forever!!
+echo ===================================================================
+
+echo ===================================================================
+echo Defining locales
+echo ===================================================================
+
+sudo echo LC_ALL=en_US.UTF-8 >> /etc/environment
+sudo echo LANG=en_US.UTF-8 >> /etc/environment
+
+echo ===================================================================
+echo Removing unnecessary packages, cleanup etc.
+echo ===================================================================
+
+echo Before:
+sudo du -sh /var/cache/apt/archives
+sudo apt-get remove --purge ubuntu-core-launcher -y
+sudo apt autoclean
+sudo apt-get clean
+sudo apt autoremove
+echo After:
+sudo du -sh /var/cache/apt/archives
+
+echo ===================================================================
 echo All set up!
 echo Commands used, and more, can be found here:
 echo https://linuxacademy.com/howtoguides/posts/show/topic/11960-how-to-install-mean-on-ubuntu-1604
 echo ===================================================================
-
-echo Install nodemon/forever!!
-
-sudo echo LC_ALL=en_US.UTF-8 >> /etc/environment
-sudo echo LANG=en_US.UTF-8 >> /etc/environment
