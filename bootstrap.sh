@@ -65,6 +65,12 @@ sudo apt-get install build-essential -y
 
 #############################################################
 
+echo -e "\e[100mInstalling Angular CLI\e[49m"
+
+npm install -g @angular/cli
+
+#############################################################
+
 echo -e "\e[100mInstalling Bower\e[49m"
 
 sudo npm install -g bower
