@@ -11,8 +11,8 @@ A portable virtual development environment.
 
 ## Build the box
 
-    $ git@github.com:beanilsson/javascript_development.git
-    $ cd python_development
+    $ git clone git@github.com:beanilsson/javascript_development.git
+    $ cd javascript_development
     $ vagrant up
 
 ## Use the box

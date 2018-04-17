@@ -54,6 +54,7 @@ sudo apt-get install -y mongodb-org
 sudo mkdir -p /data/db
 sudo chown -R `id -u` /data/db
 sudo chmod -R go+w /data/db
+<<<<<<< HEAD
 
 #############################################################
 
@@ -62,6 +63,12 @@ echo -e "\e[100mInstalling NodeJS\e[49m"
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install build-essential -y
+
+#############################################################
+
+echo -e "\e[100mInstalling Angular CLI\e[49m"
+
+npm install -g @angular/cli
 
 #############################################################
 
