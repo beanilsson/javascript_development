@@ -26,6 +26,10 @@ Vagrant.configure("2") do |config|
                     guest: 8088,
                     host: 9088
 
+  config.vm.network 'forwarded_port',
+                    guest: 8081,
+                    host: 9081
+
   config.vm.provision :shell,
                       path: 'bootstrap.sh',
                       keep_color: true,
