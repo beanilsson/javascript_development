@@ -54,7 +54,6 @@ sudo apt-get install -y mongodb-org
 sudo mkdir -p /data/db
 sudo chown -R `id -u` /data/db
 sudo chmod -R go+w /data/db
-<<<<<<< HEAD
 
 #############################################################
 
